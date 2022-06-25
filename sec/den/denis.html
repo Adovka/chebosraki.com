@@ -10,11 +10,21 @@
 	   <table>
 	   
 <center> <img src="denis.gif" height="800" >   <center>
+<center>
+<div id="pocik" onclick="test()"><img id="image" src="icon.png"widht="200" height="200"></div>
+ 
+<script>
 
- <audio controls ><source src="den.mp3" type="audio/mp3"></audio>
- 
- 
- 
+    function test(){
+        var audio = document.createElement('audio');
+        audio.setAttribute("autoplay","true");
+        audio.innerHTML = "<source src=\"den.mp3\" type=\"audio/mpeg\">";
+        document.body.appendChild(audio);
+        document.getElementById("image").src="icon2.png";
+ }
+
+</script>
+ <center>
  
  
  
